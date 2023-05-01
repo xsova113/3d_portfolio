@@ -212,6 +212,7 @@ const projects = [
     ],
     image: metaversus,
     source_code_link: "https://github.com/xsova113/metaversus",
+    link: 'https://metaversus-ejr621ney-xsova113.vercel.app/'
   },
   {
     name: "Dall-e 2.0",
@@ -233,6 +234,7 @@ const projects = [
     ],
     image: dalle,
     source_code_link: "https://github.com/xsova113/dall-e",
+    link: 'https://dall-e-wheat-seven.vercel.app/'
   },
   {
     name: "Trip Guide",
