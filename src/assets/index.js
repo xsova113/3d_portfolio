@@ -28,7 +28,7 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import sanity_ecom from "./sanity_ecom.png";
 import dalle from "./dalle.png";
 import metaversus from "./metaversus.png";
 
@@ -60,7 +60,7 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  sanity_ecom,
   metaversus,
   dalle
 };

@@ -20,7 +20,7 @@ import {
   shopify,
   metaversus,
   dalle,
-  tripguide,
+  sanity_ecom,
   threejs,
 } from "../assets";
 
@@ -237,25 +237,26 @@ const projects = [
     link: 'https://dall-e-wheat-seven.vercel.app/'
   },
   {
-    name: "Trip Guide",
+    name: "Ecommerce Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A fully functional ecommerce website with sanity studio as backend content manager with stripe payment integration.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sanity studio",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "stripe",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: sanity_ecom,
     source_code_link: "https://github.com/",
+    link: 'https://sanity-ecom-stripe.vercel.app/'
   },
 ];
 
