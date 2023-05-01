@@ -36,7 +36,8 @@ const ProjectCard = ({
             flex
             justify-end
             m-3
-            card-img_hover"
+            card-img_hover
+            cursor-pointer"
           >
             <div
               onClick={() => window.open(source_code_link)}
