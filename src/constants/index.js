@@ -106,7 +106,7 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  }
+  },
 ];
 
 const experiences = [
@@ -212,7 +212,7 @@ const projects = [
     ],
     image: metaversus,
     source_code_link: "https://github.com/xsova113/metaversus",
-    link: 'https://metaversus-ejr621ney-xsova113.vercel.app/'
+    link: "https://metaversus-ejr621ney-xsova113.vercel.app/",
   },
   {
     name: "Dall-e 2.0",
@@ -234,7 +234,7 @@ const projects = [
     ],
     image: dalle,
     source_code_link: "https://github.com/xsova113/dall-e",
-    link: 'https://dall-e-wheat-seven.vercel.app/'
+    link: "https://dall-e-wheat-seven.vercel.app/",
   },
   {
     name: "Ecommerce Website",
@@ -256,7 +256,17 @@ const projects = [
     ],
     image: sanity_ecom,
     source_code_link: "https://github.com/",
-    link: 'https://sanity-ecom-stripe.vercel.app/'
+    link: "https://sanity-ecom-stripe.vercel.app/",
+  },
+  {
+    name: "Dashboard",
+    description: "A fully functional dashboard",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+    ],
   },
 ];
 

@@ -1,22 +1,26 @@
-import { Tilt } from "react-tilt"
-import React from 'react'
-import { motion } from "framer-motion"
-import { styles } from "../styles"
-import { github } from "../assets"
-import { SectionWrapper } from "../hoc"
-import { projects } from "../constants"
-import { fadeIn, textVariant } from "../utils/motion"
+import { Tilt } from "react-tilt";
+import React from "react";
+import { motion, useScroll } from "framer-motion";
+import { styles } from "../styles";
+import { github } from "../assets";
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
-  index, name, description, tags, image, source_code_link, link
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  link,
 }) => {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-    >
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div
           className="relative
@@ -26,7 +30,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className='w-full h-full object-cover rounded-2xl'
+            className="w-full h-full object-cover rounded-2xl"
           />
           <div
             onClick={() => window.open(link)}
@@ -60,23 +64,23 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div
-          className="mt-5"
-        >
+        <div className="mt-5">
           <h3
             className="
           text-white
           font-bold
           text-[24px]"
           >
-            {name}</h3>
+            {name}
+          </h3>
           <p
             className="
             mt-2
             text-secondary
             text-[14px]"
           >
-            {description}</p>
+            {description}
+          </p>
         </div>
 
         <div
@@ -99,10 +103,11 @@ const ProjectCard = ({
         </div>
       </Tilt>
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -120,21 +125,20 @@ const Works = () => {
           max-w-3xl
           leading-[30px]"
         >
-          I have worked on a variety of exciting projects that showcase my skills and expertise. Each project has links to my github repo and live demos in it. It reflects my ability to work with different technologies.
+          I have worked on a variety of exciting projects that showcase my
+          skills and expertise. Each project has links to my github repo and
+          live demos in it. It reflects my ability to work with different
+          technologies.
         </motion.p>
       </div>
-
-      <div className="mt-20 flex flex-wrap gap-7">
+      
+      <div className="mt-20 flex overflow-x-scroll whiteSpace-nowrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Works, "work")
+export default SectionWrapper(Works, "work");
