@@ -1,6 +1,6 @@
 import { Tilt } from "react-tilt";
 import React from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -107,7 +107,6 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const { scrollYProgress } = useScroll();
   return (
     <>
       <motion.div variants={textVariant()}>
